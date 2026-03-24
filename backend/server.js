@@ -5,7 +5,7 @@ const app = express() //criou o servidor, "app"
 app.use(cors()) //criou cors como uma middleware
 app.use(express.json()) //Converte os dados em json
 
-let tarefas = ["estudar node", "configurar o git"] //"Banco de dados" temporário (lista)
+let tarefas = ["Acordar no domingo", "Voltar a dormir instantâneamente"] //"Banco de dados" temporário (lista)
 
 app.get('/tarefas', (req, res) => { //define o que acontece quando "get" é requirido no endereço /tarefas
     
